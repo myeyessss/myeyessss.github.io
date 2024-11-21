@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBoutique</title>
+
+    <!-- Preconexión a recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./Vista/css/styles.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header-cha">
+        <div class="container">
+            <!-- Botón de menú -->
+            <div class="btn-menu">
+                <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <h1>BBoutique</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <a href="./Vista/entrar.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="#">Registrate</a>
+                <a href="#">Blog</a>
+                <a href="#"><i class="fa-solid fa-gift"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="./Vista/seemore.html">Bolsos</a>
+                <a href="./Controlador/consulta.php">Consulta</a>
+                <a href="./Vista/actress/worker.html">Perfil empleado</a>
+                <a href="./Controlador/vista.php">View</a>
+                <a href="./Vista/proce.html">Procedimiento</a>
+                <a href="#">Instagram</a>
+            </nav>
+            <label for="btn-menu"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+    </div>
+    <!-- Fin Menú lateral -->
+
+
+
+
+    <section id="main-banner">
+        <div class="main-banner-box">
+            <video autoplay muted loop playsinline>
+                <source src="https://videos.pexels.com/video-files/8991326/8991326-uhd_2732_1144_24fps.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+        <div class="main-banner-text">
+            <h1>¡Descubre la Elegancia que te Define!</h1>
+            <p> Bienvenido a BBoutique
+                Encuentra la Joya Perfecta para Cada Ocasión</p>
+            <a href="#">THE PINK GIFT</a>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="what-we-provide">
+        <div class="w-info-box">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Notificacion 24h </strong>
+                <p>Este atento de sus citas</p>
+            </div>
+        </div>
+        <div class="w-info-box">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-spa"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Servicio Exclusivo</strong>
+                <p>Sientase comodo en nuestros<br> establecimientos</p>
+            </div>
+        </div>
+        <div class="w-info-box">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-tag"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Garantia 100%</strong>
+                <p>Garantizamos el material y la atencion de nuestros servicios</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="product-grid-half">
+        <div class="product-grid-box product-grid-box1">
+            <img src="https://media.tiffany.com/is/image/tco/73482844_HB_ALT3X3?hei=1230&wid=1230&fmt=webp&op_usm=1,2,6"
+                alt="product">
+            <div class="product-grid-text">
+                <span>Sac en velours</span>
+                <strong>Éclat de Majesté</strong>
+                <a href="./Vista/seemore.html">Contact</a>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box2">
+            <img src="https://www.chanel.com/images//t_one///q_auto:good,f_auto,fl_lossy,dpr_1.1/w_840/small-shopping-bag-light-pink-beige-ecru-cotton-wool-tweed-sequins-gold-tone-metal-cotton-wool-tweed-sequins-gold-tone-metal-packshot-artistique-vue2-as3969b17658nzg47-9544359280670.jpg"
+                alt="product">
+            <div class="product-grid-text">
+                <span>Sac en cuir</span>
+                <strong>Petit sac de courses</strong>
+                <a href="./Vista/seemore.html">Contact</a>
+            </div>
+        </div>
+        <div class="product-grid-box product-grid-box3">
+            <img src="https://media.tiffany.com/is/image/tco/73911796_HB_ALT3X1?hei=2460&wid=2460&fmt=webp&op_usm=1,2,6"
+                alt="product">
+            <div class="product-grid-text">
+                <span>Sac en daim</span>
+                <strong>Tiffany T </strong>
+                <a href="./Vista/seemore.html">Contact</a>
+            </div>
+        </div>
+    </section>
+    <section id="new_product">
+        <div class="new-product-heading">
+            <h2>La combinaison idéale</h2>
+            <p>ton destin</p>
+        </div>
+        <div class="new-product-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Swiper -->
+            <div class="swiper mySwiperNewProduct">
+                <div class="swiper-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Slide 1-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/451L16A4105X1655_E01?$default_GHC_640$&crop=815,150,370,1572&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">Dualité Éclatante</a>
+                                <span>1.800 €</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end-->
+                    <!-- Slide 2-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/N2842WOMCYD03S_E01?$default_GHC_640$&crop=265,150,1471,1535&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">Couronne blanc</a>
+                                <span>1,000 €</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end -->
+                    <!-- Slide 4-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/R2211WOMCYD03S_E03?$default_GHC_640$&crop=273,809,1014,787&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">CD Treasure</a>
+                                <span> 1,500 € </span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end-->
+                    <!-- Slide 5-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_F_24_3_LOOK_042_E06?$lookDefault_GH-GHC_640$&crop=568,0,1864,2000&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">Saphir Éternel</a>
+                                <span>300 €</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end-->
+                    <!-- Slide 5-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/JRCO95001_E06?$no_transfo_default_GHC_640$&crop=0,0,2000,2000&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">Hexagone Lumineux</a>
+                                <span>800 €</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end-->
+                    <!-- Slide 6-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/R2142WOMCYD03S_E01?$default_GHC_640$&crop=443,958,849,579&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">rose pêche</a>
+                                <span>5,000 €</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end-->
+                    <!-- Slide 7-->
+                    <div class="swiper-slide">
+                        <div class="new-product-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <a href="./Vista/entrar.html" class="new-product-img">
+                                <img src="https://assets.christiandior.com/is/image/diorprod/441R75A1166X0200_E01?$default_GHC_640$&crop=585,149,825,1354&bfc=on&qlt=85"
+                                    alt="product" />
+                                <span>New</span>
+                                <button class="new-product-cart-btn"><i
+                                        class="fa-duotone fa-solid fa-cart-shopping"></i>Add to
+                                    cart</button>
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="./Vista/entrar.html" class="new-product-title">Bar 30 Montaigne</a>
+                                <span>1,200 €</span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Slide end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!--company-box****-->
+            <div class="footer-company-box">
+                <a href="#" class="logo">
+                </a>
+                <img src="./Vista/pics/logo-transformed.png"
+                    alt="logo">
+                <!--details-->
+                <p>"Inspirando Elegancia en Cada Creación"</p>
+                <!--social-->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/?locale2=es_ES&_rdr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdirect%2Finbox%2F%3F__coig_login%3D1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-link-box">
+                <strong>PQR's</strong>
+                <ul>
+                    <li><a href="#">EE. UU</a></li>
+                    <li><a href="#">(303) 555-6789</a></li>
+                    <li><a href="#">México</a></li>
+                    <li><a href="#">+52 1 33 2345 6789</a></li>
+                    <li><a href="#">+52 1 55 2345 6789</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-box">
+                <strong>Paises mas vendidos</strong>
+                <ul>
+                    <li><a href="#">NY city</a></li>
+                    <li><a href="#">Los Angeles</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Shanghai</a></li>
+                    <li><a href="#">Londres</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-box">
+                <strong>La Escalera de BBoutique</strong>
+                <ul>
+                    <li><a href="#">Primer Peldaño</a></li>
+                    <li><a href="#">Segundo Peldaño</a></li>
+                    <li><a href="#">Tercer Peldaño</a></li>
+                    <li><a href="#">Cuarto Peldaño</a></li>
+                </ul>
+            </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By Going-To Internet</span>
+            <span class="copyright">&#169; Copyright 2024 Going-To Internet</span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiperNewProduct", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

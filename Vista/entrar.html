@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>Sign in</title> <!-- Establece el título de la pestaña del navegador como "Sign in" -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Cargar fuentes desde Google Fonts -->
+    <!-- Preconexión a Google Fonts para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlace a varias fuentes de Google Fonts utilizadas en el sitio -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&family=Poppins:wght@200&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+    <!-- Cargar íconos de Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Enlace al archivo CSS externo para el estilo de la página -->
+    <link rel="stylesheet" href="./css/entrar.css">
+</head>
+
+<body>
+    <header class="header-cha">
+        <div class="container">
+            <!-- Botón de menú -->
+            <div class="btn-menu">
+                <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <h1>BBoutique</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <a href="../index.html"><i class="fa-solid fa-house-laptop"></i></a>
+                <a href="#">Registrate</a>
+                <a href="#">Blog</a>
+                <a href="#"><i class="fa-solid fa-gift"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="./Vista/seemore.html">Bolsos</a>
+                <a href="./Controlador/consulta.php">Consulta</a>
+                <a href="./actress/worker.html">Perfil empleado</a>
+                <a href="./Controlador/vista.php">View</a>
+                <a href="./Vista/proce.html">Procedimiento</a>
+                <a href="#">Instagram</a>
+            </nav>
+            <label for="btn-menu"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+    </div>
+    <!-- Fin Menú lateral -->
+
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Con una cuenta en BBoutique.com,
+                    puede ahorrar tiempo durante el proceso
+                    de compra, acceder a la cesta de la compra
+                    desde cualquier dispositivo y consultar
+                    su historial de pedidos.
+                </p>
+                <a href="crear.html">
+                    <input type="button" value="Crear una cuenta" id="sign-in"></a>
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crea una Cuenta con:</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <p>Usa tu email para registrarte</p>
+                <form action="../Controlador/login.php" method="post" class="form form-register">
+
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" placeholder="Correo Electronico" name="correousuario">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" placeholder="Contraseña" name="passwordusuario">
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Iniciar Sesión">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Te registraste correctamente</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

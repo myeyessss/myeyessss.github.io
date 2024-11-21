@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBoutique</title>
+
+    <!-- Preconexión a recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header-cha">
+        <div class="container">
+            <!-- Botón de menú -->
+            <div class="btn-menu">
+                <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <h1>BBoutique</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <a target="_blank" href="https://calendar.google.com/calendar/u/0/r?pli=1"><i class="fa-regular fa-calendar"></i></a>
+                <a target="_blank" href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=barbieboutique&table=usuario">Database</a>
+                <a href="../Vista/home/admin.html">Home</a>
+                <a href="#"><i class="fa-solid fa-gift"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="../../Controlador/index.html">Administracion Cliente</a>
+                <a href="../../Controlador/index.html">Administracion Servicios</a>
+                <a href="../../Controlador/index.html">Administracion Citas</a>
+                <a href="../../Controlador/index.html">Administracion Empleados</a>
+                <a href="./Vista/proce.html">Publicidad</a>
+            </nav>
+            <label for="btn-menu"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+    </div>
+    <!-- Fin Menú lateral -->
+
+    <!-- ======================= Cards ================== -->
+    <div class="cardBox">
+        <div class="card">
+            <div>
+                <div class="numbers">1,504</div>
+                <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBx">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="numbers">80</div>
+                <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBx">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="numbers">284</div>
+                <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBx">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="numbers">$7,842</div>
+                <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBx">
+                <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+        </div>
+    </div>
+
+    <section id="main-banner">
+        <div class="main-banner-box">
+            <video autoplay muted loop playsinline>
+                <source src="https://videos.pexels.com/video-files/10140479/10140479-uhd_1440_2732_25fps.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="main-banner-text">
+            <h1>¡Tu Pasión Impulsa Nuestro Éxito!</h1>
+            <p>Cada proyecto cuenta. Tu dedicación hace la diferencia en cada prenda.</p>        </div>
+
+    <!-- ================ Order Details List ================= -->
+    <div class="details">
+        <div class="recentAppointments">
+            <div class="cardHeader">
+                <h2>Recent Appointments</h2>
+                <a href="#" class="btn">View All</a>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Client Name</td>
+                        <td>Service</td>
+                        <td>Appointment Date</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Anna Smith</td>
+                        <td>Dress</td>
+                        <td>2024-08-20</td>
+                        <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Perfume</td>
+                        <td>2024-08-22</td>
+                        <td><span class="status scheduled">Scheduled</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>Bag</td>
+                        <td>2024-08-25</td>
+                        <td><span class="status canceled">Canceled</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>Necklace</td>
+                        <td>2024-08-30</td>
+                        <td><span class="status inProgress">In Progress</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sarah Wilson</td>
+                        <td>Ring</td>
+                        <td>2024-09-02</td>
+                        <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>David Miller</td>
+                        <td>Dress</td>
+                        <td>2024-09-05</td>
+                        <td><span class="status scheduled">Scheduled</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jessica Taylor</td>
+                        <td>Perfume</td>
+                        <td>2024-09-10</td>
+                        <td><span class="status canceled">Canceled</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>James Anderson</td>
+                        <td>Bag</td>
+                        <td>2024-09-15</td>
+                        <td><span class="status inProgress">In Progress</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+    <!-- ================= New Customers ================ -->
+     <section class="teams">
+<div class="recentCustomers">
+    <div class="cardHeader">
+        <h2>Team</h2>
+    </div>
+
+    <table>
+        <tbody>
+            <tr>
+                <td width="60px">
+                    <div class="imgBx">
+                        <img src="https://media.istockphoto.com/id/913501670/es/foto/joven-sonriente-confianza-empresaria-mirando-directamente-a-la-c%C3%A1mara-con-los-brazos-cruzados.jpg?s=612x612&w=0&k=20&c=CF5J-TFF_OP2WnL1uEMxzycwHfcfwSJ1QmAXQ5aHkqs=" alt="David">
+                    </div>
+                </td>
+                <td>
+                    <h4>David <br> <span>Italy</span></h4>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p class="progressText">70%</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <div class="imgBx">
+                        <img src="https://media.istockphoto.com/id/619636712/es/foto/retrato-de-un-hombre-de-negocios.jpg?s=612x612&w=0&k=20&c=JFPl62KJLISS1vADy2B1hut2wF6A-3T5ZipboeqAlTs=" alt="Amit">
+                    </div>
+                </td>
+                <td>
+                    <h4>Amit <br> <span>India</span></h4>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p class="progressText">50%</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <div class="imgBx">
+                        <img src="https://media.istockphoto.com/id/467490371/es/foto/alegre-negocios-hombre-escribiendo-en-su-comprimido.jpg?s=612x612&w=0&k=20&c=IC2Hqk38TzPUmLIxaFO6BFqpeTdRpkhM0YUjgLUz-d0=" alt="Emily">
+                    </div>
+                </td>
+                <td>
+                    <h4>Emily <br> <span>USA</span></h4>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p class="progressText">90%</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <div class="imgBx">
+                        <img src="https://media.istockphoto.com/id/2103842496/es/foto/joven-sonriente-con-cabello-casta%C3%B1o-largo-con-camisa-blanca-y-jeans.jpg?s=612x612&w=0&k=20&c=PIq7cXNeggl6csnvatp_LRy0I3Fx8kO5qQwwKy-LC18=" alt="Maria">
+                    </div>
+                </td>
+                <td>
+                    <h4>Maria <br> <span>Spain</span></h4>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                    <p class="progressText">40%</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+<!-- ================= Product List ================ -->
+<div class="recentProducts">
+    <div class="cardHeader">
+        <h2>Upcoming Products</h2>
+    </div>
+
+    <table>
+        <tbody>
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-gem"></i> <!-- Icono para collares -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Collar de Perlas <br> <span>Arriva: 2024-09-01</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-person-dress"></i> <!-- Icono para vestidos -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Vestido Elegante <br> <span>Arriva: 2024-09-05</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-ring"></i> <!-- Icono para anillos -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Anillo de Diamantes <br> <span>Arriva: 2024-09-10</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-bag-shopping"></i> <!-- Icono para bolsos -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Bolso de Cuero <br> <span>Arriva: 2024-09-15</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-droplet"></i> <!-- Icono para perfumes -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Perfume Floral <br> <span>Arriva: 2024-09-20</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-gem"></i> <!-- Icono para collares -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Collar de Plata <br> <span>Arriva: 2024-09-25</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-person-dress"></i> <!-- Icono para vestidos -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Vestido Casual <br> <span>Arriva: 2024-09-30</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-ring"></i> <!-- Icono para anillos -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Anillo de Oro <br> <span>Arriva: 2024-10-05</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-bag-shopping"></i> <!-- Icono para bolsos -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Bolso Elegante <br> <span>Arriva: 2024-10-10</span></h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="60px">
+                    <span class="icon">
+                        <i class="fa-solid fa-droplet"></i> <!-- Icono para perfumes -->
+                    </span>
+                </td>
+                <td>
+                    <h4>Perfume Ambarino <br> <span>Arriva: 2024-10-15</span></h4>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+

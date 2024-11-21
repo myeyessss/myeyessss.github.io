@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.outer-container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.side-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block; /* Asegura que el botón respete márgenes */
+    margin-top: 50px; /* Espacio hacia arriba del botón */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    background-color: #56ccca;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Cinzel';
+    font-weight: 600;
+}

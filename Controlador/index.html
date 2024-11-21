@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBoutique</title>
+
+    <!-- Preconexión a recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Marcellus&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header-cha">
+        <div class="container">
+            <!-- Botón de menú -->
+            <div class="btn-menu">
+                <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <h1>BBoutique</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <a target="_blank" href="https://calendar.google.com/calendar/u/0/r?pli=1"><i class="fa-regular fa-calendar"></i></a>
+                <a target="_blank" href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=barbieboutique&table=usuario">Database</a>
+                <a href="../Vista/home/admin.html">Home</a>
+                <a href="#"><i class="fa-solid fa-gift"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="./reportesCE.php">Reportes Cliente</a>
+                <a href="./reportesS.php">Reportes Servicios</a>
+                <a href="./reportesC.php">Reportes Citas</a>
+                <a href="./reportesE.php">Reportes Empleados</a>
+                <a href="./reportesR.php">Reportes Rol</a>
+            </nav>
+            <label for="btn-menu"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+    </div>
+    <!-- Fin Menú lateral -->
+
+    <div class="container-data">
+        <!-- Sección de Actualización de Cliente -->
+        <div class="actualizar mb-5">
+            <h1>Actualizar Cliente / Editar Perfil</h1>
+            <form action="../Modelo/actualizarCE.php" method="POST">
+                <input type="number" name="idcliente" placeholder="IdCliente" class="form-control mb-3" required>
+                <input type="number" class="form-control mb-3" name="numdoccliente" placeholder="Número de Documento">
+                <input type="text" class="form-control mb-3" name="tipodoccliente" placeholder="Tipo de Documento">
+                <input type="text" class="form-control mb-3" name="nombrecliente" placeholder="Nombre">
+                <input type="text" class="form-control mb-3" name="apellidocliente" placeholder="Apellido">
+                <input type="text" class="form-control mb-3" name="direccioncliente" placeholder="Dirección">
+                <input type="text" class="form-control mb-3" name="telefonocliente" placeholder="Teléfono">
+                <input type="text" class="form-control mb-3" name="estadocliente" placeholder="Estado">
+                <input type="submit" class="btn" value="Actualizar">
+            </form>
+        </div>
+        <form method="POST" action="../Modelo/deleteCE.php" class="mb-5">
+            <h1>Eliminar Cliente</h1>
+            <label for="idcliente" class="title">ID del Cliente:</label>
+            <input type="number" name="idcliente" class="form-control mb-3" required>
+            <input type="submit" value="Eliminar Cliente" class="btn">
+        </form>
+        <form method="POST" action="../Modelo/deleteCE.php" class="mb-5">
+            <h3>¡Importante!</h3>
+            <p>Recuerda, antes de realizar un cambio  en los campos debes dirigirte a la base de datos</p>
+            <img src="https://em-content.zobj.net/source/apple/325/index-pointing-up_261d-fe0f.png" alt="">
+        </form>
+
+        <!-- Sección de Empleados -->
+        <form action="../Modelo/updateE.php" method="POST" class="mb-5">
+            <h1>Actualizar Empleado</h1>
+
+            <label for="idempleado" class="title">ID del Empleado:</label>
+            <input type="number" id="idempleado" name="idempleado" class="form-control mb-3" required>
+
+            <label for="numdocempleado" class="title">Número de Documento:</label>
+            <input type="text" id="numdocempleado" name="numdocempleado" class="form-control mb-3" required>
+
+            <label for="tipodocempleado" class="title">Tipo de Documento:</label>
+            <input type="text" id="tipodocempleado" name="tipodocempleado" class="form-control mb-3" required>
+
+            <label for="nombreempleado" class="title">Nombre:</label>
+            <input type="text" id="nombreempleado" name="nombreempleado" class="form-control mb-3" required>
+
+            <label for="apellidoempleado" class="title">Apellido:</label>
+            <input type="text" id="apellidoempleado" name="apellidoempleado" class="form-control mb-3" required>
+
+            <label for="direccionempleado" class="title">Dirección:</label>
+            <input type="text" id="direccionempleado" name="direccionempleado" class="form-control mb-3" required>
+
+            <label for="telefonoempleado" class="title">Teléfono:</label>
+            <input type="text" id="telefonoempleado" name="telefonoempleado" class="form-control mb-3" required>
+
+            <label for="estadoempleado" class="title">Estado:</label>
+            <input type="text" id="estadoempleado" name="estadoempleado" class="form-control mb-3" required>
+
+            <label for="idusuario" class="title">ID Usuario:</label>
+            <input type="number" id="idusuario" name="idusuario" class="form-control mb-3" required>
+
+            <input type="submit" class="btn" value="Actualizar Empleado">
+        </form>
+    </form>
+    <form action="../Modelo/deleteE.php" method="POST" class="mb-5">
+        <h1>Eliminar Empleado</h1>
+    
+        <label for="idempleado" class="title">ID del Empleado:</label>
+        <input type="number" id="idempleado" name="idempleado" class="form-control mb-3" required>
+    
+        <input type="submit" class="btn" value="Eliminar Empleado">
+    </form>
+
+        <form action="../Modelo/insertarE.php" method="POST" class="mb-5">
+            <h1>Registrar Empleado</h1>
+
+            <label for="numdocempleado" class="title">Número de Documento:</label>
+            <input type="text" id="numdocempleado" name="numdocempleado" class="form-control mb-3" required>
+
+            <label for="tipodocempleado" class="title">Tipo de Documento:</label>
+            <input type="text" id="tipodocempleado" name="tipodocempleado" class="form-control mb-3" required>
+
+            <label for="nombreempleado" class="title">Nombre:</label>
+            <input type="text" id="nombreempleado" name="nombreempleado" class="form-control mb-3" required>
+
+            <label for="apellidoempleado" class="title">Apellido:</label>
+            <input type="text" id="apellidoempleado" name="apellidoempleado" class="form-control mb-3" required>
+
+            <label for="direccionempleado" class="title">Dirección:</label>
+            <input type="text" id="direccionempleado" name="direccionempleado" class="form-control mb-3" required>
+
+            <label for="telefonoempleado" class="title">Teléfono:</label>
+            <input type="text" id="telefonoempleado" name="telefonoempleado" class="form-control mb-3" required>
+
+            <label for="estadoempleado" class="title">Estado:</label>
+            <input type="text" id="estadoempleado" name="estadoempleado" class="form-control mb-3" required>
+
+            <label for="idusuario" class="title">ID Usuario:</label>
+            <input type="number" id="idusuario" name="idusuario" class="form-control mb-3" required>
+
+            <input type="submit" class="btn" value="Registrar Empleado">
+            </form>
+        
+
+        <!-- Sección de Citas -->
+        <form action="../Modelo/insertarC.php" method="post" class="mb-5">
+            <h1>Agregar Cita</h1>
+            <label for="fechacita" class="title">Fecha de la Cita:</label>
+            <input type="date" id="fechacita" name="fechacita" class="form-control mb-3" required>
+
+            <label for="horacita" class="title">Hora de la Cita:</label>
+            <input type="time" id="horacita" name="horacita" class="form-control mb-3" required>
+
+            <label for="estadocita" class="title">Estado de la Cita:</label>
+            <input type="text" id="estadocita" name="estadocita" class="form-control mb-3" required>
+
+            <label for="idempleado" class="title">Empleado ID:</label>
+            <input type="number" id="idempleado" name="idempleado" class="form-control mb-3" required>
+
+            <label for="idcliente" class="title">Cliente ID:</label>
+            <input type="number" id="idcliente" name="idcliente" class="form-control mb-3" required>
+
+            <label for="idservicio" class="title">Servicio ID:</label>
+            <input type="number" id="idservicio" name="idservicio" class="form-control mb-3" required>
+
+            <input type="submit" class="btn" value="Agregar Cita">
+        </form>
+
+        <form method="POST" action="../Modelo/deleteC.php" class="mb-5">
+            <h1>Eliminar Cita</h1>
+            <label for="idcita" class="title">ID de la cita:</label>
+            <input type="number" name="idcita" class="form-control mb-3" required>
+            <input type="submit" value="Eliminar Cita" class="btn">
+        </form>
+
+        <form method="POST" action="../Modelo/updateC.php" class="mb-5">
+            <h1>Actualizar Cita</h1>
+            <label for="idcita" class="title">ID de la cita:</label>
+            <input type="number" name="idcita" class="form-control mb-3" required>
+
+            <label for="fechacita" class="title">Fecha:</label>
+            <input type="date" name="fechacita" class="form-control mb-3" required>
+
+            <label for="horacita" class="title">Hora:</label>
+            <input type="time" name="horacita" class="form-control mb-3" required>
+
+            <label for="estadocita" class="title">Estado:</label>
+            <input type="text" name="estadocita" class="form-control mb-3" required>
+
+            <label for="idempleado" class="title">ID Empleado:</label>
+            <input type="number" name="idempleado" class="form-control mb-3" required>
+
+            <label for="idcliente" class="title">ID Cliente:</label>
+            <input type="number" name="idcliente" class="form-control mb-3" required>
+
+            <label for="idservicio" class="title">ID Servicio:</label>
+            <input type="number" name="idservicio" class="form-control mb-3" required>
+
+            <input type="submit" class="btn" value="Actualizar Cita">
+        </form>
+
+        <!-- Sección de Servicios -->
+        <form action="../Modelo/updateS.php" method="post" class="mb-5">
+            <h1>Actualizar Servicio</h1>
+            <label for="idservicio" class="title">ID Servicio:</label>
+            <input type="number" id="idservicio" name="idservicio" class="form-control mb-3" required>
+
+            <label for="descripcionservicio" class="title">Descripción del Servicio:</label>
+            <input type="text" id="descripcionservicio" name="descripcionservicio" class="form-control mb-3" required>
+
+            <label for="estadoservicio" class="title">Estado del Servicio:</label>
+            <input type="text" id="estadoservicio" name="estadoservicio" class="form-control mb-3" required>
+
+            <input type="submit" class="btn" value="Actualizar Servicio">
+        </form>
+
+        <form action="../Modelo/deleteS.php" method="post" class="mb-5">
+            <h1>Eliminar Servicio</h1>
+            <label for="idservicio" class="title">ID Servicio:</label>
+            <input type="number" id="idservicio" name="idservicio" class="form-control mb-3" required>
+            <input type="submit" class="btn" value="Eliminar Servicio">
+        </form>
+
+        <form action="../Modelo/insertarS.php" method="post" class="mb-5">
+            <h1>Agregar Servicio</h1>
+            <label for="descripcionservicio" class="title">Descripción del Servicio:</label>
+            <input type="text" id="descripcionservicio" name="descripcionservicio" class="form-control mb-3" required>
+
+            <label for="estadoservicio" class="title">Estado del Servicio:</label>
+            <input type="text" id="estadoservicio" name="estadoservicio" class="form-control mb-3" required>
+
+            <input type="submit" class="btn" value="Agregar Servicio">
+        </form>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <!--company-box****-->
+            <div class="footer-company-box">
+                <a href="#" class="logo">
+                </a>
+                <img src="../Vista/pics/logo-transformed.png" alt="logo">
+                <!--details-->
+                <p>"Inspirando Elegancia en Cada Creación"</p>
+                <!--social-->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/?locale2=es_ES&_rdr"><i class="fa-brands fa-facebook"></i></a>
+                    <a
+                        href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdirect%2Finbox%2F%3F__coig_login%3D1"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a
+                        href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer-link-box">
+                <strong>PQR's</strong>
+                <ul>
+                    <li><a href="#">EE. UU</a></li>
+                    <li><a href="#">(303) 555-6789</a></li>
+                    <li><a href="#">México</a></li>
+                    <li><a href="#">+52 1 33 2345 6789</a></li>
+                    <li><a href="#">+52 1 55 2345 6789</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-box">
+                <strong>Paises mas vendidos</strong>
+                <ul>
+                    <li><a href="#">NY city</a></li>
+                    <li><a href="#">Los Angeles</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Shanghai</a></li>
+                    <li><a href="#">Londres</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-box">
+                <strong>La Escalera de BBoutique</strong>
+                <ul>
+                    <li><a href="#">Primer Peldaño</a></li>
+                    <li><a href="#">Segundo Peldaño</a></li>
+                    <li><a href="#">Tercer Peldaño</a></li>
+                    <li><a href="#">Cuarto Peldaño</a></li>
+                </ul>
+            </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By Going-To Internet</span>
+            <span class="copyright">&#169; Copyright 2024 Going-To Internet</span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+</body>
+
+</html>
